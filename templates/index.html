@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Career Website{% endblock %}
+
+{% block content %}
+<div class="hero-section bg-primary text-white text-center py-5">
+    <div class="container">
+        <h1 class="display-4">Welcome to My Career Website</h1>
+        <p class="lead">Professional Portfolio & Experience</p>
+        <a href="{{ url_for('about') }}" class="btn btn-light btn-lg">Learn More About Me</a>
+    </div>
+</div>
+
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <h3 class="card-title">About Me</h3>
+                    <p class="card-text">Learn about my background, skills, and passion for technology.</p>
+                    <a href="{{ url_for('about') }}" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <h3 class="card-title">Experience</h3>
+                    <p class="card-text">Explore my professional experience and notable projects.</p>
+                    <a href="{{ url_for('experience') }}" class="btn btn-primary">View Experience</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body text-center">
+                    <h3 class="card-title">Contact</h3>
+                    <p class="card-text">Get in touch with me for opportunities and collaboration.</p>
+                    <a href="{{ url_for('contact') }}" class="btn btn-primary">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
